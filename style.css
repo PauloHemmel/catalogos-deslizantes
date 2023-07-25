@@ -6,3 +6,15 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height:100vh;
+    background: linear-gradient(to left top, #031a9a, #8b53ff);
+}
+.card .img img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+}
