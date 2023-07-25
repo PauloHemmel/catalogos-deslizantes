@@ -11,10 +11,40 @@ body {
     align-items: center;
     justify-content: center;
     min-height:100vh;
+    padding: 0 35px;
     background: linear-gradient(to left top, #031a9a, #8b53ff);
+}
+.wrapper {
+    max-width: 1100px;
+    width: 100%;
+}
+.wrapper .carousel{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 12px);
+    gap: 16px;
+/*    overflow: hidden;*/
+}
+.carousel .card {
+    height: 342px;
+    list-style: none;
+    background: #fff;
+    border-radius: 8px;
+    display: flex;
+    padding-bottom: 15px;
+    align-items: center;
+    justify-content: center
+    flex-direction: column;
+}
+.card .img {
+    background: #8b53ff;
+    width: 148px;
+    height: 148px;
+    border-radius: 50%;
 }
 .card .img img {
     width: 140px;
     height: 140px;
     object-fit: cover;
+    border-radius: 50%;
 }
